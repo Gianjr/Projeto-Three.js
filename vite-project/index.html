@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <linh href="./galeria/style_galeria.css" rel="stylesheet">
   <link href="/src/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Corrigido aqui -->
   <title>Document</title>
@@ -12,11 +13,116 @@
   <nav>
     <a  href="/">Sphere</a>
     <ul>
-      <li>Explore</li>
-      <li>Create</li>
+      <li><a href="#gallery">Galeria</a></li>
+      <li><a href="#Empresas">Empresas</a></li>
+      <li><a href="#Cursos">Cursos</a></li>
     </ul>
   </nav>
-  <h1 class="title">Gian Fortunato Sacramento</h1>
-  <script type="module" src="main.js"></script>
+  <selectiom>
+    <video id="video" src="./midia/smoke.mp4" autoplay muted></video>
+    <h1 class="title">
+      <span>G</span>
+      <span>i</span>
+      <span>a</span>
+      <span>n</span>
+      <span> </span>
+      <span>J</span>
+      <span>u</span>
+      <span>n</span>
+      <span>i</span>
+      <span>o</span>
+      <span>r</span>
+    </h1>
+  </selectiom>
+  
+  <div id="gallery" class="gallery">
+    <h1 class="gallery_title">Galeria</h1>
+    <hr class="metallic-line">
+    <div class="gallery_container">
+        <img class="gallery_item gallery_item1" src="./galeria/midia/foto1.jpeg" data-index="1">
+        <img class="gallery_item gallery_item2" src="./galeria/midia/foto2.jpeg" data-index="2">
+        <img class="gallery_item gallery_item3" src="./galeria/midia/foto3.jpeg" data-index="3">
+        <img class="gallery_item gallery_item4" src="./galeria/midia/foto4.jpeg" data-index="4">
+        <img class="gallery_item gallery_item5" src="./galeria/midia/foto5.png" data-index="5">
+    </div>
+    <div class="gallery_controls"></div>
+  </div>
+  
+
+</div>
+<h1 id="Empresas" class="Empresas">Empresas</h1> 
+<hr class="metallic-line"><!-- Título centralizado -->
+  
+  <div class="container"> <!-- Contêiner que envolve as 3 listas -->
+    <div class="list_Ecotec">
+      <h2>Ecotec</h2>
+      <ul>
+        <li class="Técnico">Técnico em Segurança do Trabalho</li>
+        <li>10/2024 - 01/2025</li>
+        <li>Elaboração de documentos e relatorios</li>
+        <li>Aplicação de gestão adiministrativa e treinamentos</li>
+        <li>Fiscalização de campo</li>
+        <li>Cordenação e condução de DSS</li>
+      </ul>
+    </div>
+    <div class="list_Comin">
+      <h2>Comin</h2>
+      <ul>
+        <li>Técnico em Segurança do Trabalho</li>
+        <li>03/2023 - 01/2024</li>
+        <li>Realização de inspeção e auditorias de segurança</li>
+        <li>Investigação de incidentes e acidentes</li>
+        <li>Acompanhamento e controle de agentes ambientais</li>
+      </ul>
+    </div>
+    <div class="list_Cardan">
+      <h2>Cardan</h2>
+      <ul>
+        <li>Aux. Técnico de Segurança do Trabalho</li>
+        <li>09/2022 - 02/2023</li>
+        <li>Inspeção de EPI's e EPC'S</li>
+        <li>Auxilio em investigação de acidentes</li>
+        <li>Apoio na gestão de residuos e descartes</li>
+        <li>Apoio na organização e execução de DSS</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<h1 id="Cursos" class="Cursos">Cursos</h1> 
+<hr class="metallic-line"><!-- Título centralizado -->
+  
+  <div class="Cursos_container"> <!-- Contêiner que envolve as 3 listas -->
+    <div class="list_IFMG">
+      <h2>>Curso Técnico em Segurança do Trabalho</h2>
+      <ul>
+        <li class="list_IFMG">IFMG - Instituto Federal de Minas Gerais</li>
+        <li>2012 - 2014</li>
+      </ul>
+    </div>
+    <div class="list_MA">
+      <h2>Curso Multiplicador NR10</h2>
+      <ul>
+        <li>MA Consultoria e Treinamentos</li>
+        <li>2024</li>
+      </ul>
+    </div>
+    <div class="list_Registro">
+      <h2>Registro Ativo</h2>
+      <ul>
+        <li>Ministerio do trabalho</li>
+      </ul>
+    </div>
+    <div class="list_cnh">
+      <h2>CNH AD</h2>
+      <ul>
+        <li>Detran MG</li>
+      </ul>
+    </div>
+  </div>
+
+ 
+   <script type="module" src="main.js"></script>
+   <script type="module" src="./galeria/galeria.js"></script>
 </body>
 </html>
