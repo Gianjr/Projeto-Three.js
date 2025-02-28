@@ -420,18 +420,6 @@ li {
     top: 75%; /* Ajuste do posicionamento */
   }
 
-  /* Ajuste da galeria */
-  .gallery_container {
-    flex-direction: column;
-    height: auto;
-    max-width: 100%;
-  }
-
-  .gallery_item {
-    width: 90%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
 
   /* Ajuste do container principal */
   .container {
@@ -479,12 +467,4 @@ li {
     display: flex;
     flex-direction: row;
     gap: 4rem;
-  }
-
-  .gallery_container {
-    flex-direction: row;
-    height: 400px;
-  }
-
-  .gallery_item {
-    width: 
+  }}
