@@ -1,6 +1,6 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js';
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/controls/OrbitControls.js';
-import gsap from 'https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import gsap from "gsap";
 
 // Obtém o vídeo pelo ID
 const video = document.getElementById('video');
@@ -10,6 +10,7 @@ video.addEventListener('ended', function() {
   // Remove o vídeo da página após ele terminar
   video.remove();
 });
+
 
 // Scene
 const scene = new THREE.Scene();
@@ -99,6 +100,7 @@ window.addEventListener("mouseup", () => (mouseDown = false));
 
 window.addEventListener('mousemove', (e) => {
   if (mouseDown) {
+   
     // Calculando os valores RGB
     rgb = [
       Math.round((e.pageX / sizer.width) * 255),  // Corrigido o cálculo para RGB entre 0 e 255
