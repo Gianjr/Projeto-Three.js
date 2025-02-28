@@ -454,17 +454,3 @@ li {
     height: 100%;
   }
 }
-
-/* Media Query geral para telas maiores que 1080px */
-@media (min-width: 1024px) {
-  nav {
-    padding: 4rem 8rem;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-  }}
