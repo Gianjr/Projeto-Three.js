@@ -1,0 +1,19 @@
+# Arquivo _config.yml
+
+# Define o diretório de origem, caso use um subdiretório como "docs"
+source: ./docs
+
+# Define o diretório de saída onde os arquivos gerados serão colocados
+destination: ./docs/_site
+
+# Nome do seu site
+title: "Meu Site Jekyll"
+
+# URL do seu site
+url: "https://www.exemplo.com"
+
+# Configurações de tema
+theme: jekyll-theme-primer
+
+# Outras configurações
+markdown: kramdown
