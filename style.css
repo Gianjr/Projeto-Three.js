@@ -1,16 +1,16 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body,html {
+
+body, html {
   overflow-x: hidden;
   font-family: "poppins", sans-serif;
-background-color: black; 
+  background-color: black; 
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -23,47 +23,49 @@ html{
   z-index: 1;  /* Vai ficar atrás dos outros elementos */
 }
 
-nav{
+nav {
   color: #fff;
   z-index: 2;
   position: relative;
   padding: 4rem 8rem;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
-nav a{ 
+nav a { 
   text-decoration: none;
   color: #fff;
   font-weight: bold;
 }
-nav ul{
+
+nav ul {
   list-style: none;
   display: flex;
   gap: 4rem;
 }
 
-video{
+video {
   z-index: 1;
   position: absolute;
   object-fit: cover;
 }
-.title{
- margin: 0;
- padding: 0;
- position: absolute;
- top: 85%;
- transform: translateY(-50%);
- width: 100%;
- text-align: center;
- color: #ddd;
- font-size: 5em;
- font-family: "poppins", sans-serif;
- letter-spacing: 0.2em;
- z-index: 1;
+
+.title {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #ddd;
+  font-size: 5em;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 0.2em;
+  z-index: 1;
 }
 
-h1 span{
+h1 span {
   opacity: 0;
   display: inline-block;
   animation: animate 1s linear forwards;
@@ -83,28 +85,17 @@ h1 span{
   }
 }
 
-h1 span:nth-child(1)
-{animation-delay:1s;}
-h1 span:nth-child(2)
-{animation-delay:1.5s;}
-h1 span:nth-child(3)
-{animation-delay:2s;}
-h1 span:nth-child(4)
-{animation-delay:2.5s;}
-h1 span:nth-child(5)
-{animation-delay:3s;}
-h1 span:nth-child(6)
-{animation-delay:3.5s;}
-h1 span:nth-child(7)
-{animation-delay:4s;}
-h1 span:nth-child(8)
-{animation-delay:4.5s;}
-h1 span:nth-child(9)
-{animation-delay:5s;}
-h1 span:nth-child(10)
-{animation-delay:5.5s;}
-h1 span:nth-child(11)
-{animation-delay:6s;}
+h1 span:nth-child(1) { animation-delay:1s; }
+h1 span:nth-child(2) { animation-delay:1.5s; }
+h1 span:nth-child(3) { animation-delay:2s; }
+h1 span:nth-child(4) { animation-delay:2.5s; }
+h1 span:nth-child(5) { animation-delay:3s; }
+h1 span:nth-child(6) { animation-delay:3.5s; }
+h1 span:nth-child(7) { animation-delay:4s; }
+h1 span:nth-child(8) { animation-delay:4.5s; }
+h1 span:nth-child(9) { animation-delay:5s; }
+h1 span:nth-child(10) { animation-delay:5.5s; }
+h1 span:nth-child(11) { animation-delay:6s; }
 
 .elemento {
   position: absolute; /* ou relative, dependendo da necessidade */
@@ -112,90 +103,87 @@ h1 span:nth-child(11)
 }
 
 /* inicio da galeria */
-.gallery{
+.gallery {
   width: 100%;
   margin-top: 700px;
 }
 
-.gallery_title{
+.gallery_title {
   color: #ddd;
   margin-top: 60%;
   text-align: center;
   font-size: 3rem;
-  
 }
 
-.gallery_container{
-align-items: center;
-display: flex;
-height: 400px;
-margin: 0 auto;
-max-width: 1000px;
-position: relative;
-
+.gallery_container {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
 }
 
-.gallery_item{
-height: 200px;
-opacity: 1;
-position: absolute;
-transition: all 0.3s ease-in-out;
-width: 330px;
-z-index: 0;
-border-radius: 15px;
-background-size: contain;
+.gallery_item {
+  height: 200px;
+  opacity: 1;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 330px;
+  z-index: 0;
+  border-radius: 15px;
+  background-size: contain;
 }
 
-.gallery_item1{
+.gallery_item1 {
   left: 15px;
   opacity: 0.2;
   transform: translateX(-50%);
 }
 
-.gallery_item2 .gallery_item4{
+.gallery_item2 .gallery_item4 {
   height: 250px;
   opacity: 0.8;
   width: 380px;
   z-index: 1;
 }
 
-.gallery_item2{
+.gallery_item2 {
   left: 30%;
   transform: translateX(-50%);
   opacity: 0.4;
-  
 }
 
-.gallery_item3{
-box-shadow: -2px 5px 33px 6px rgb(0, 0, 0, 0.35) ;
-height: 300px;
-opacity: 1;
-left: 50%;
-transform: translateX(-50%);
-width: 470px;
-z-index: 2;
+.gallery_item3 {
+  box-shadow: -2px 5px 33px 6px rgb(0, 0, 0, 0.35);
+  height: 300px;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 470px;
+  z-index: 2;
 }
 
-.gallery_item4{
+.gallery_item4 {
   left: 70%;
   transform: translateX(-50%);
   opacity: 0.4;
 }
 
-.gallery_item5{
+.gallery_item5 {
   left: 85%;
   opacity: 0.2;
   transform: translate(-50%);
 }
 
-.gallery_controls{
+.gallery_controls {
   display: flex;
   justify-content: center;
   margin: 25px 0;
   height: 100px;
 }
 
-.gallery_controls button{
+.gallery_controls button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -205,15 +193,15 @@ z-index: 2;
   text-transform: capitalize;
 }
 
-.gallery_controls button:focus{
-outline: none;
+.gallery_controls button:focus {
+  outline: none;
 }
 
-.gallery_controls-previous{
-position: relative;
+.gallery_controls-previous {
+  position: relative;
 }
 
-.gallery_controls-previous::before{
+.gallery_controls-previous::before {
   border: solid #fff;
   border-width: 0 5px 5px 0;
   content: '';
@@ -228,15 +216,15 @@ position: relative;
   width: 5px;
 }
 
-.gallery_controls-previous:hover::before{
+.gallery_controls-previous:hover::before {
   left: -40px;
 }
 
-.gallery_controls-next{
+.gallery_controls-next {
   position: relative;
 }
 
-.gallery_controls-next::before{
+.gallery_controls-next::before {
   border: solid #fff;
   border-width: 0 5px 5px 0;
   content: '';
@@ -251,11 +239,11 @@ position: relative;
   width: 5px;
 }
 
-.gallery_controls-next:hover::before{
+.gallery_controls-next:hover::before {
   right: -40px;
 }
 
-.gallery_nav{
+.gallery_nav {
   bottom: -15px;
   display: flex;
   justify-content: center;
@@ -265,7 +253,7 @@ position: relative;
   width: 100%;
 }
 
-.gallery nav li{
+.gallery nav li {
   background: #ccc;
   border-radius: 50%;
   height: 10px;
@@ -273,11 +261,11 @@ position: relative;
   width: 10px;
 }
 
-.gallery-nav li .gallery_iten-selected{
+.gallery-nav li .gallery_iten-selected {
   background: #fff;
 }
 
-/* inicio de empresas*/
+/* inicio de empresas */
 .Empresas {
   font-size: 3rem;
   font-weight: 600;
@@ -317,13 +305,12 @@ position: relative;
 
 @keyframes shine {
   from {
-      left: -50%;
+    left: -50%;
   }
   to {
-      left: 120%;
+    left: 120%;
   }
 }
-
 
 .container {
   display: flex; /* Organiza as listas horizontalmente */
@@ -361,13 +348,12 @@ li {
   text-align: center;
 }
 
-.Técnico{
+.Técnico {
   margin: 5px 0 0 1px;
   font-family: "poppins", sans-serif;
 }
 
-/* Inicio dos Cursos*/
-
+/* Inicio dos Cursos */
 .Cursos {
   font-size: 3rem;
   font-weight: 600;
@@ -413,8 +399,9 @@ li {
   text-align: center;
 }
 
-* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
+/* Media Query para dispositivos com tela 1080x2408 */
+@media (min-width: 1080px) and (max-height: 2408px) {
+  /* Ajustes para a navegação */
   nav {
     padding: 2rem 3rem;
     flex-direction: column;
@@ -427,6 +414,13 @@ li {
     gap: 1rem;
   }
 
+  /* Ajuste do título */
+  .title {
+    font-size: 4em;
+    top: 75%; /* Ajuste do posicionamento */
+  }
+
+  /* Ajuste da galeria */
   .gallery_container {
     flex-direction: column;
     height: auto;
@@ -439,25 +433,19 @@ li {
     margin-bottom: 1rem;
   }
 
-  .title {
-    font-size: 3em;
-    top: 75%;
-  }
-
-  .gallery_title {
-    font-size: 2rem;
-    margin-top: 50%;
-  }
-
-  .metallic-line {
-    height: 3px;
-  }
-
+  /* Ajuste do container principal */
   .container {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Ajustes para a linha metálica */
+  .metallic-line {
+    height: 3px;
+    margin-bottom: 1rem;
+  }
+
+  /* Ajustes das listas */
   .list_Ecotec, .list_Comin, .list_Cardan,
   .list_MA, .list_IFMG, .list_Registro, .list_cnh {
     margin: 10px 0;
@@ -467,12 +455,7 @@ li {
     font-size: 1.2rem;
   }
 
-  .Cursos_container, .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
+  /* Ajuste dos vídeos */
   video {
     width: 100%;
     height: auto;
@@ -484,7 +467,7 @@ li {
   }
 }
 
-/* Responsividade para telas grandes */
+/* Media Query geral para telas maiores que 1080px */
 @media (min-width: 1024px) {
   nav {
     padding: 4rem 8rem;
@@ -504,51 +487,4 @@ li {
   }
 
   .gallery_item {
-    width: 330px;
-    height: 200px;
-  }
-
-  .title {
-    font-size: 5em;
-    top: 85%;
-  }
-
-  .gallery_title {
-    font-size: 3rem;
-    margin-top: 60%;
-  }
-
-  .metallic-line {
-    height: 5px;
-  }
-
-  .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .list_Ecotec, .list_Comin, .list_Cardan,
-  .list_MA, .list_IFMG, .list_Registro, .list_cnh {
-    margin: 0 10px;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .Cursos_container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  video {
-    width: 100%;
-    height: auto;
-  }
-
-  .webgl {
-    width: 100%;
-    height: 100%;
-  }
-}
+    width: 
