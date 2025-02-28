@@ -4,13 +4,13 @@
 source: ./docs
 
 # Define o diretório de saída onde os arquivos gerados serão colocados
-destination: ./docs/_site
+destination: ./docs
 
 # Nome do seu site
 title: "Meu Site Jekyll"
 
 # URL do seu site
-url: "https://www.exemplo.com"
+url: "https://gianjr.github.io/Projeto/"
 
 # Configurações de tema
 theme: jekyll-theme-primer
